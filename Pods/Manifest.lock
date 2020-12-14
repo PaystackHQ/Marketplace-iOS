@@ -1,0 +1,18 @@
+PODS:
+  - Paystack (3.0.14):
+    - Paystack/Core (= 3.0.14)
+  - Paystack/Core (3.0.14)
+
+DEPENDENCIES:
+  - Paystack
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Paystack
+
+SPEC CHECKSUMS:
+  Paystack: 255019a21982421a680e1a9539ca3a093a11dceb
+
+PODFILE CHECKSUM: 4a2bc52f07f5c702925b2cc18de17f22c4a66a74
+
+COCOAPODS: 1.5.3

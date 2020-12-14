@@ -1,0 +1,1367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000B4D817B8C5A5FF0565C7D514C69B2 /* PSTCKCategoryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ABFCE0AD4BA3DAB04C78317F4D19D5 /* PSTCKCategoryLoader.m */; };
+		0163AA134AA63C753BF9F91D976AE4FA /* PSTCKCard.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2626425587227D705A4231C2CD5A59 /* PSTCKCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01848CEF30B62E3E1D1B479BB8FD3CD7 /* PSTCKAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A87025CE122FC626708D42ADA86D4 /* PSTCKAuthViewController.m */; };
+		019091FDCAE82BA01F444C395C22432A /* PSTCKPaymentCardTextFieldViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 979DC62148D89F2D7534C9BCC5ED147B /* PSTCKPaymentCardTextFieldViewModel.m */; };
+		06A1EBD3AB84EBD17E6C04C827E3B199 /* PSTCKRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9497064D24ECEDBB7C39110B6A8C68DD /* PSTCKRSA.m */; };
+		08C4B62CBD95217F466DEBE88D6A3C43 /* PSTCKToken.m in Sources */ = {isa = PBXBuildFile; fileRef = AC288B4A9B67DC859D108A17EB21407C /* PSTCKToken.m */; };
+		0987147F9DB36ADBF97188CEEF34AD7C /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AED5C2F0CCC0F8573EB32602F9A4EB /* Validatable.swift */; };
+		0B3A11406F3884F0FC60DDB6DA552C76 /* pstck_card_diners.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF77F88619FC74FDA7D68F835CD075C /* pstck_card_diners.png */; };
+		0C38D0FB9D32B70AC064B65F5A972B69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29232C0A90275E386A312F9C83843838 /* Foundation.framework */; };
+		0DF7A0FCB0DD6A28F3EDBD918E29157A /* PSTCKAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC2592639294B7D69D9F2D14D3808 /* PSTCKAddressViewController.swift */; };
+		0F5B392981976E9E7A61A38296EFAC01 /* pstck_card_cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = C139AA0DFEA0E955BD3B99D55D5A6757 /* pstck_card_cvc.png */; };
+		119433E21DE3C2E5D56E14518A3C8094 /* PSTCKValidationParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 461D0BE06582B6280B7C8AF1E8A8517A /* PSTCKValidationParams.m */; };
+		123A13AD6652B7AA7EC22644184A2055 /* PSTCKFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EC725888121FE1603A4966C13C007C /* PSTCKFormTextField.m */; };
+		16D150286DBFC14004F25AA27A4D237D /* PSTCKAPIClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D6EA0643244A278E8E09F23029789 /* PSTCKAPIClientExtension.swift */; };
+		18FA151B3205FFE4CA5C613911116A6D /* Pods-sample-appTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FA8992D273C08E7CAF541F8516EBA /* Pods-sample-appTests-dummy.m */; };
+		1A4310FDCD3D817DCA09EAFA147CEA6B /* pstck_card_jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF15BD9A34C4E2E3D19BBB2864C65AD /* pstck_card_jcb@3x.png */; };
+		1F5CC78C2C235A2C931ABA29E530F79A /* pstck_card_placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E92B55D7667C2DC346500C2E13166E3 /* pstck_card_placeholder@3x.png */; };
+		203933AA077FFA2C2A68AD24D49B4480 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FB0E8CDC52D771B23AD2E3F04CDEF /* ValidationRule.swift */; };
+		21C725150AE5F6410206CB9BBB12B3A5 /* Paystack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A32D1C75A170436A162BF12501D4E755 /* Paystack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2211B193C5CC098DD48F98B96A10B23F /* NSDictionary+Paystack.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D058F1727F4D547B6D403A9DB09BA1 /* NSDictionary+Paystack.m */; };
+		254B018E3E0BCCFB397F39F83538AF37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29232C0A90275E386A312F9C83843838 /* Foundation.framework */; };
+		259595D4FE4D24185EA804C73FF5FA94 /* pstck_card_verve@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99567AF67A049FD617350DB58F133A35 /* pstck_card_verve@3x.png */; };
+		271CC9195E3A908DFE9A259DEE7F5E05 /* PaystackError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3249CA8824AFCF20EC15F50883D387BF /* PaystackError.m */; };
+		277497FEA4A549FFE1A7ED56404963E0 /* pstck_card_jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 056D2328FB53C7BD0CA504C24B257C63 /* pstck_card_jcb@2x.png */; };
+		2A020623BA96474DA688A90E81FE47CB /* pstck_card_placeholder_template@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC76F11946348C54340B9BB3D1253C1 /* pstck_card_placeholder_template@3x.png */; };
+		2A69E590A172E834EF767DDCA1AA0479 /* PSTCKFormEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 38171CC74FE2A2889EE81E094EECF3EC /* PSTCKFormEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32729DA0675155F77F1300D2960250FE /* pstck_card_cvc_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D8D48A388132A96986359BCAB9AB89 /* pstck_card_cvc_amex@2x.png */; };
+		35C37331A3331B4B4ACE879533235FA7 /* PSTCKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 065CAC40EA1159E2666F32F8142963F8 /* PSTCKCard.m */; };
+		3B969BD2C9EAE9A8A66C79831F7268E7 /* pstck_card_diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DC0C2AB109BA5796BA1044B54D2356 /* pstck_card_diners@2x.png */; };
+		40524C9F90B7EF46B8812E02D4A61F2A /* PSTCKAPIClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 806DDE418BF42E6C0462659C481B84C0 /* PSTCKAPIClient+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4078C299B767048FB6AB53AEB217D289 /* pstck_card_cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4702C13F35E89B25786CD7FBE15D323 /* pstck_card_cvc@3x.png */; };
+		434D3508C0702B87B4AA26EE8E9B717E /* PSTCKPaymentCardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6432C45F126AF099E4B0C42048710A7C /* PSTCKPaymentCardTextField.m */; };
+		446DA2ED5BDD5A0DD8785D65623E946C /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA75E22C18791D269B01B7C784D42C /* ButtonExtension.swift */; };
+		45226EC196FBBC25EA8A0BCD0D60777D /* pstck_card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = D6D1AB77D4520D72544491CBAC414DE6 /* pstck_card_visa.png */; };
+		46CFBF9BB1006214EF0627EBFD4113B5 /* Paystack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2009FAB6A811FD23AB148100ABACD17C /* Paystack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		483957F2AAF3391D454620C581D9FE56 /* PSTCKAPIResponseDecodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 271F8A9A2EA9C0EE4C3BE771520CD96F /* PSTCKAPIResponseDecodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4975B20D4085CD068FF670AAC5241C67 /* Pods-sample-appUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB8DE16C02A11193218222CACDED143 /* Pods-sample-appUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ACFCE8FF3C83C2DCC6A2879706CA63B /* PSTCKFormEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D26556979F5BD41CE8F62AE33EBBC1 /* PSTCKFormEncoder.m */; };
+		50425AB7805EB0ED56DDE09623AE36E9 /* PSTCKCardParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 391534921CB4A92CA02C0EFA6AB8C472 /* PSTCKCardParams.m */; };
+		5636A6907B5D566111D399F8648FC0E1 /* pstck_card_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3836F4420505097298F04DA99C6757DC /* pstck_card_amex@3x.png */; };
+		57B5FF4F0E403DD5DD6645B012E85316 /* pstck_card_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B930FCDBA6E21F7FE5417C770C6F8112 /* pstck_card_amex@2x.png */; };
+		5A14A719B373BA80EBFAC40A34245340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29232C0A90275E386A312F9C83843838 /* Foundation.framework */; };
+		5A93BB6ECB95E537719072EC7C63C914 /* PaystackError.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BF74AEA4D208C461A71C56BBE4B440 /* PaystackError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B44739108BFBE510820721CDA5B6623 /* pstck_card_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FA05510BB931DD79322A574883D77D /* pstck_card_placeholder.png */; };
+		5EECDA3A458B08708349AB115448FA07 /* pstck_card_cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5C139F15ABBA20FF37D936D06A0030 /* pstck_card_cvc@2x.png */; };
+		5F07B9CE6E763F3942C59A614A4823AA /* pstck_card_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = C0311E2A1EE55829A97FDC3938390CCB /* pstck_card_discover.png */; };
+		628D04B64054480AA3FA6F78F75A9539 /* PSTCKValidationParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E1AD6A003C77E41874FC271BE2F140 /* PSTCKValidationParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69FB2632172CC0F075FD8A16A5DA828F /* pstck_card_placeholder_template@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E12099477E53E81E3A9B03C42B6CD2 /* pstck_card_placeholder_template@2x.png */; };
+		6ADE56DD4C5A3D6F3133B46CD67DA3E9 /* pstck_card_verve.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4598A3A89650DDCB565D35829E5650 /* pstck_card_verve.png */; };
+		6AE7367C4F30532059AF502C37C79D17 /* Pods-sample-app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B71B8B4A9339B11B49041E081EE4F250 /* Pods-sample-app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71A69AF2FFC7F2CBD6501161D3127A4A /* PSTCKToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F77A6C3D046CE8C04F278784CEEC5A /* PSTCKToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7402F996C1B60BCE95203903BFFF34DC /* PSTCKCardValidationState.h in Headers */ = {isa = PBXBuildFile; fileRef = 828C49317234801C465F31B3EEA82F47 /* PSTCKCardValidationState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74CC97FBEA1DF839B087DE8E1200D0CA /* pstck_card_mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 17154D8C80C893661C152C0E916383A5 /* pstck_card_mastercard.png */; };
+		75159E201BB138D5C91D990FEC3C2278 /* PSTCKFormEncodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD15AFF57C0B260998359AF63B87543 /* PSTCKFormEncodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78DB44450D108470831EFF1015534932 /* PSTCKAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0BD6A85FA8025F51A493414F2DA607 /* PSTCKAuthViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80AED9E9C9ED67C49A86A3FCF0736433 /* NSDictionary+Paystack.h in Headers */ = {isa = PBXBuildFile; fileRef = 866DCE7A4C8B5EDAA23F2C185E6F7686 /* NSDictionary+Paystack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81068BEE7FAEB92775F157C72D473902 /* pstck_card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEFFB1BD3237BEA18FF678CB44D96B3 /* pstck_card_visa@2x.png */; };
+		825156CD9F28CC45C92E96528A153667 /* Cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 512541386AB758D29076F77052CF8D72 /* Cancel@3x.png */; };
+		85A4986C4EE59F49AF7659FFE32D169A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29232C0A90275E386A312F9C83843838 /* Foundation.framework */; };
+		89490C117C7DFC0D2E28DDD0772EA39D /* UIImage+Paystack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6116FAA46B0505ABD4170F06D6964937 /* UIImage+Paystack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B839E0D163DCF7F8FDEBE6FE6CE5CEB /* PSTCKCardBrand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9107435D4697211C21E82A1598CB1E /* PSTCKCardBrand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D1E9C48E127F2E90F5CEB7D5DE1ADCA /* Pods-sample-appTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D9614289F8F8B1F2DF2F870ED4D920E /* Pods-sample-appTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DAA4F32FA489D01403620BB5B22004A /* PSTCKAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A73CA2E0721A8CDF91D66C2F21AFB /* PSTCKAPIClient.m */; };
+		8FC6316632E7148868EF47DF8733CEF4 /* pstck_card_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = E48BF990941182C8EDC3F8B0B16AE648 /* pstck_card_amex.png */; };
+		91B87677F06113346016AC0E753489E3 /* ValidatorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA65AFDD5E753581F057BB432D41F4 /* ValidatorDictionary.swift */; };
+		936991EF8025BA0BFBA001D1C0AB6DF1 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A8D42A6C95E0E944F7B96D9814F9C /* Validator.swift */; };
+		93A6A15E53931EEC71E8B14490BA6A55 /* Cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E09B6833DA4604C5A50C519364463D07 /* Cancel@2x.png */; };
+		94AA3D05643E54C7BD3485B33BCB59A2 /* pstck_card_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A04E3E5977680059F301C835C8581E6F /* pstck_card_placeholder@2x.png */; };
+		9638BE4A07BD13B81E024ED1B0DB8DDC /* pstck_card_jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D308FED145FD6B8F77C572A7CEE035 /* pstck_card_jcb.png */; };
+		969ED33D0B2737BFBD91AE7137462DE8 /* PSTCKRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E139B560E92FB15483B4CAFA29DCFE /* PSTCKRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BD1FF340A5CA56528E159B0BA4A4EAB /* Paystack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C23F799F560D2D2C5D80CA105D6180 /* Paystack-dummy.m */; };
+		9C3685534B5144B77377833EF1A19CDC /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 56111C7EC427EE0DA7881D6A75B9A224 /* Images */; };
+		9C8FCAF1A1724B54342CBE984FA068CD /* pstck_card_cvc_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F5A5005680874637982DF2DA7C4225 /* pstck_card_cvc_amex@3x.png */; };
+		9D48FDFA983BD6B08152837729A492F8 /* PSTCKTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = C4367093043C829A5C5418AF361421DF /* PSTCKTransaction.m */; };
+		9D4DA34700C1A2FB2703C0B19F9D1C30 /* PSTCKAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DD06AC034A4DCDD3F4785CEF25B878A4 /* PSTCKAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5428429C1D37D91605B07DC01FD16F7 /* PSTCKCardValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 201E33D0A25939221A1054BD832BED5B /* PSTCKCardValidator.m */; };
+		A6BA0AFF71E323A9654ED8D947C048DF /* PSTCKCardParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D57A32149C4EF658F5B9EBBC36777F0 /* PSTCKCardParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACEB357F317817FEA1E473B10A0349E2 /* UIImage+Paystack.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA759B1346B1E10E31627D4F980B887 /* UIImage+Paystack.m */; };
+		B08E056A462D4454713150654EC9FF8B /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F57534CF33CD966BABDDE0EFE48CF /* ValidationError.swift */; };
+		B5B44065360A8148757DFC1546AE41F7 /* pstck_card_verve@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C9DD9A9AC42B9ABE6FCBC1194D13E5 /* pstck_card_verve@2x.png */; };
+		BB684493C67D3C8A92CD0E81C2F159AC /* PSTCKCategoryLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F1009E345202213FC8A31EEEE20926 /* PSTCKCategoryLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB712C7E0AB0D7C109A180198A5036FC /* PSTCKTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D75F9A64C4A18AAA1D3B8BED7B7B2D /* PSTCKTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C44A7CD32E39124E737D98E6B84F28FF /* pstck_card_cvc_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BB3D8BB282E5A374EA62F33A23F2278 /* pstck_card_cvc_amex.png */; };
+		C4D74F31066F3C0B833788FB4ED5633E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F58AE8CD37924B2DE7052EBB6295B /* Security.framework */; };
+		C528300B730F57BED50F6CF32EC354F0 /* pstck_card_mastercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2CC2F1F48FDBAFCE87B7303A8ACBF2 /* pstck_card_mastercard@3x.png */; };
+		C6F4C6DAC1D3D6EAAA14FF9038B1D365 /* pstck_card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BF7C528C97D9A45523EF35EBB1FBBEC /* pstck_card_visa@3x.png */; };
+		C73391BAF7EEE4BDA080BD48DC55E8E8 /* pstck_card_discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F90630CED969877914E3E5EDDF5EB4 /* pstck_card_discover@3x.png */; };
+		CD0D657655F427EB0D6D722B1E55038E /* pstck_card_mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31A2A40EF38589FAE0CDBE959B99AC /* pstck_card_mastercard@2x.png */; };
+		CD6FF708F61B7330C7C32B671011B5D8 /* PSTCKTransactionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C83D8CA875589F73144CE03F8740B7C5 /* PSTCKTransactionParams.m */; };
+		CF7C622C35BD9E3D26921AA4D0A54079 /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA5CEA6C7CADAA1227C2DCCAB66C6B /* RequiredRule.swift */; };
+		D5C721303970A9B0B65FE47978F32467 /* PSTCKAPIPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B61177ACB6F56FDD03FC67330C104972 /* PSTCKAPIPostRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA1AEB2B822FE560FD0E758EDF7B9B0B /* PSTCKFormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 87685B7DC4789CA9CDF4F185702C2019 /* PSTCKFormTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DAE459FCD3A99F721B11B151410189DE /* PSTCKCardValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = F33D42B31181BD327D040610C8DD2F31 /* PSTCKCardValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC1191FFF9C908335D8F581A527C12D3 /* pstck_card_placeholder_template.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E61D9DD901A4444973C48D1763ED91A /* pstck_card_placeholder_template.png */; };
+		DE306B6BF52D9AA075327FBC09E5C711 /* PSTCKPaymentCardTextFieldViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 083C2D0617239CB073FBAFB9AE99FA51 /* PSTCKPaymentCardTextFieldViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E957BFA04D4217DB85E62B001BBC0E95 /* ValidationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958DD84D51E32D4648450C5A946D57F /* ValidationDelegate.swift */; };
+		EB2DC725145D1D0D932CB32D8DC12DDC /* Pods-sample-app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A905E2ED13F7C0057A78B2C3A5F8E2AB /* Pods-sample-app-dummy.m */; };
+		EB3200D2C63E1EF7814340E3337FF2B6 /* pstck_card_diners@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5357EE9B0D9312EE9D7C38B180A91B /* pstck_card_diners@3x.png */; };
+		EB9E23B52FC54EF3A735E63A015E2D2A /* PSTCKTransactionParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 734DFE781B296A5C004E8DDF326ABD2D /* PSTCKTransactionParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE1B197B023CCC6992F0E3981D7D8629 /* Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 00312C846E3AF2E204EE88890A588D8C /* Cancel.png */; };
+		F04EAEC0A027CEED4A45B3F3647D6ECD /* PSTCKAPIPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F667F95DE960AA6BCC324A7751931398 /* PSTCKAPIPostRequest.m */; };
+		F13BF56831954DF57663579748B5E3A6 /* KeyboardHandlingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC147032D0E2751106F06ACBF502EDFA /* KeyboardHandlingVC.swift */; };
+		F280BF789A4C9384DADB693E1F7035E6 /* PSTCKPaymentCardTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D5B30FE1D6DA649813A27D28D0FB1EFC /* PSTCKPaymentCardTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FADE40468BAD8005C47508B320058C5B /* Pods-sample-appUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 915F1F9542212AACB28CA05D3B64C84F /* Pods-sample-appUITests-dummy.m */; };
+		FBBDDFB252AD2FB4BAC5A5E21278A8C4 /* pstck_card_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DA5AE5B78B93F89C6A56B93E76A7D5 /* pstck_card_discover@2x.png */; };
+		FE5AAFA9629EC05DF1A91DCACF2944E9 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03944F54765EF3E17DDB954AD36D7A /* Rule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		077449C979419637F0AC1FE14E406097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F6B3A02F43B7A5E7B24383A351AD835;
+			remoteInfo = Paystack;
+		};
+		1642519C921B8C5DF7C38EB93C1EC851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23A32C5645205116EF0C9CE2002206D;
+			remoteInfo = "Pods-sample-app";
+		};
+		DBA97DD96353C3AB58A25512868610D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23A32C5645205116EF0C9CE2002206D;
+			remoteInfo = "Pods-sample-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00312C846E3AF2E204EE88890A588D8C /* Cancel.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Cancel.png; path = Paystack/Resources/Images/Cancel.png; sourceTree = "<group>"; };
+		0123EF110CCF3A89D571C4481809F951 /* Paystack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Paystack.xcconfig; sourceTree = "<group>"; };
+		056D2328FB53C7BD0CA504C24B257C63 /* pstck_card_jcb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_jcb@2x.png"; path = "Paystack/Resources/Images/pstck_card_jcb@2x.png"; sourceTree = "<group>"; };
+		05AED5C2F0CCC0F8573EB32602F9A4EB /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Paystack/Validator/Validatable.swift; sourceTree = "<group>"; };
+		065CAC40EA1159E2666F32F8142963F8 /* PSTCKCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKCard.m; path = Paystack/PSTCKCard.m; sourceTree = "<group>"; };
+		083C2D0617239CB073FBAFB9AE99FA51 /* PSTCKPaymentCardTextFieldViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKPaymentCardTextFieldViewModel.h; path = Paystack/UI/PSTCKPaymentCardTextFieldViewModel.h; sourceTree = "<group>"; };
+		09FC00CF0E011E6C6881AB748C9460C7 /* Pods-sample-app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-app-frameworks.sh"; sourceTree = "<group>"; };
+		0E5FA8992D273C08E7CAF541F8516EBA /* Pods-sample-appTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sample-appTests-dummy.m"; sourceTree = "<group>"; };
+		0ED90D3275CCF05C6780433B15014E57 /* Pods-sample-appTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-appTests-frameworks.sh"; sourceTree = "<group>"; };
+		109FB0E8CDC52D771B23AD2E3F04CDEF /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Paystack/Validator/ValidationRule.swift; sourceTree = "<group>"; };
+		11E1312585DAF0081571508BD1A5760F /* Pods-sample-appTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-appTests-resources.sh"; sourceTree = "<group>"; };
+		17154D8C80C893661C152C0E916383A5 /* pstck_card_mastercard.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_mastercard.png; path = Paystack/Resources/Images/pstck_card_mastercard.png; sourceTree = "<group>"; };
+		1A4598A3A89650DDCB565D35829E5650 /* pstck_card_verve.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_verve.png; path = Paystack/Resources/Images/pstck_card_verve.png; sourceTree = "<group>"; };
+		1D03944F54765EF3E17DDB954AD36D7A /* Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rule.swift; path = Paystack/Validator/Rule.swift; sourceTree = "<group>"; };
+		1E2CC2F1F48FDBAFCE87B7303A8ACBF2 /* pstck_card_mastercard@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_mastercard@3x.png"; path = "Paystack/Resources/Images/pstck_card_mastercard@3x.png"; sourceTree = "<group>"; };
+		1EC76F11946348C54340B9BB3D1253C1 /* pstck_card_placeholder_template@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_placeholder_template@3x.png"; path = "Paystack/Resources/Images/pstck_card_placeholder_template@3x.png"; sourceTree = "<group>"; };
+		2009FAB6A811FD23AB148100ABACD17C /* Paystack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Paystack.h; path = Paystack/PublicHeaders/Paystack.h; sourceTree = "<group>"; };
+		201E33D0A25939221A1054BD832BED5B /* PSTCKCardValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKCardValidator.m; path = Paystack/PSTCKCardValidator.m; sourceTree = "<group>"; };
+		271F8A9A2EA9C0EE4C3BE771520CD96F /* PSTCKAPIResponseDecodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKAPIResponseDecodable.h; path = Paystack/PublicHeaders/PSTCKAPIResponseDecodable.h; sourceTree = "<group>"; };
+		28ABFCE0AD4BA3DAB04C78317F4D19D5 /* PSTCKCategoryLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKCategoryLoader.m; path = Paystack/PSTCKCategoryLoader.m; sourceTree = "<group>"; };
+		29232C0A90275E386A312F9C83843838 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2C0B06952EB4AC92F08B0CC2E33E0013 /* Pods-sample-app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-app-resources.sh"; sourceTree = "<group>"; };
+		2E61D9DD901A4444973C48D1763ED91A /* pstck_card_placeholder_template.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_placeholder_template.png; path = Paystack/Resources/Images/pstck_card_placeholder_template.png; sourceTree = "<group>"; };
+		2EF77F88619FC74FDA7D68F835CD075C /* pstck_card_diners.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_diners.png; path = Paystack/Resources/Images/pstck_card_diners.png; sourceTree = "<group>"; };
+		2F9107435D4697211C21E82A1598CB1E /* PSTCKCardBrand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKCardBrand.h; path = Paystack/PublicHeaders/PSTCKCardBrand.h; sourceTree = "<group>"; };
+		316527BE71B99FB791AE712A52FCDBDF /* Pods-sample-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-app.release.xcconfig"; sourceTree = "<group>"; };
+		3249CA8824AFCF20EC15F50883D387BF /* PaystackError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PaystackError.m; path = Paystack/PaystackError.m; sourceTree = "<group>"; };
+		3271C508084DBA707E2820F24BADE71D /* Paystack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Paystack.modulemap; sourceTree = "<group>"; };
+		346802E110F6331F811F23BE3A6F87F5 /* Pods-sample-appUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sample-appUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		37DC0C2AB109BA5796BA1044B54D2356 /* pstck_card_diners@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_diners@2x.png"; path = "Paystack/Resources/Images/pstck_card_diners@2x.png"; sourceTree = "<group>"; };
+		38171CC74FE2A2889EE81E094EECF3EC /* PSTCKFormEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKFormEncoder.h; path = Paystack/PSTCKFormEncoder.h; sourceTree = "<group>"; };
+		3836F4420505097298F04DA99C6757DC /* pstck_card_amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_amex@3x.png"; path = "Paystack/Resources/Images/pstck_card_amex@3x.png"; sourceTree = "<group>"; };
+		391534921CB4A92CA02C0EFA6AB8C472 /* PSTCKCardParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKCardParams.m; path = Paystack/PSTCKCardParams.m; sourceTree = "<group>"; };
+		3A004801C6C825D1A2430A53307B8392 /* Pods-sample-app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sample-app-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A0BD6A85FA8025F51A493414F2DA607 /* PSTCKAuthViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKAuthViewController.h; path = Paystack/UI/PSTCKAuthViewController.h; sourceTree = "<group>"; };
+		3A5AC2592639294B7D69D9F2D14D3808 /* PSTCKAddressViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PSTCKAddressViewController.swift; path = Paystack/PSTCKAddressViewController.swift; sourceTree = "<group>"; };
+		3ACF1B9E3AD1C0DF7821625095D3EA47 /* Pods-sample-appTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sample-appTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D57A32149C4EF658F5B9EBBC36777F0 /* PSTCKCardParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKCardParams.h; path = Paystack/PublicHeaders/PSTCKCardParams.h; sourceTree = "<group>"; };
+		3F3E692AC5A5B60CB1050F60724C8EEF /* Pods-sample-appUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-appUITests-resources.sh"; sourceTree = "<group>"; };
+		41780722AD1230A7B58DB049C3930BE4 /* Paystack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Paystack-prefix.pch"; sourceTree = "<group>"; };
+		41E15211FAE0D6E6228A70E300407313 /* Pods-sample-app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sample-app-acknowledgements.plist"; sourceTree = "<group>"; };
+		43F5A5005680874637982DF2DA7C4225 /* pstck_card_cvc_amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_cvc_amex@3x.png"; path = "Paystack/Resources/Images/pstck_card_cvc_amex@3x.png"; sourceTree = "<group>"; };
+		44EB9D1879A73009DD9330FF5B77512F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461D0BE06582B6280B7C8AF1E8A8517A /* PSTCKValidationParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKValidationParams.m; path = Paystack/PSTCKValidationParams.m; sourceTree = "<group>"; };
+		48438103020042DB7CA5EA9381BBB2B2 /* Pods-sample-appTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-sample-appTests.modulemap"; sourceTree = "<group>"; };
+		48EC725888121FE1603A4966C13C007C /* PSTCKFormTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKFormTextField.m; path = Paystack/UI/PSTCKFormTextField.m; sourceTree = "<group>"; };
+		4BD15AFF57C0B260998359AF63B87543 /* PSTCKFormEncodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKFormEncodable.h; path = Paystack/PublicHeaders/PSTCKFormEncodable.h; sourceTree = "<group>"; };
+		4BF7C528C97D9A45523EF35EBB1FBBEC /* pstck_card_visa@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_visa@3x.png"; path = "Paystack/Resources/Images/pstck_card_visa@3x.png"; sourceTree = "<group>"; };
+		4D9614289F8F8B1F2DF2F870ED4D920E /* Pods-sample-appTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sample-appTests-umbrella.h"; sourceTree = "<group>"; };
+		512541386AB758D29076F77052CF8D72 /* Cancel@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Cancel@3x.png"; path = "Paystack/Resources/Images/Cancel@3x.png"; sourceTree = "<group>"; };
+		56111C7EC427EE0DA7881D6A75B9A224 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = Paystack/Resources/Images; sourceTree = "<group>"; };
+		58E1AD6A003C77E41874FC271BE2F140 /* PSTCKValidationParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKValidationParams.h; path = Paystack/PublicHeaders/PSTCKValidationParams.h; sourceTree = "<group>"; };
+		59437956ACD962565D009499317607D3 /* Pods-sample-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		5958DD84D51E32D4648450C5A946D57F /* ValidationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationDelegate.swift; path = Paystack/Validator/ValidationDelegate.swift; sourceTree = "<group>"; };
+		5A87C1A0DC7C17E476BAAE1659729563 /* Pods-sample-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5A73CA2E0721A8CDF91D66C2F21AFB /* PSTCKAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKAPIClient.m; path = Paystack/PSTCKAPIClient.m; sourceTree = "<group>"; };
+		6116FAA46B0505ABD4170F06D6964937 /* UIImage+Paystack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Paystack.h"; path = "Paystack/PublicHeaders/UI/UIImage+Paystack.h"; sourceTree = "<group>"; };
+		6432C45F126AF099E4B0C42048710A7C /* PSTCKPaymentCardTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKPaymentCardTextField.m; path = Paystack/UI/PSTCKPaymentCardTextField.m; sourceTree = "<group>"; };
+		65DA5AE5B78B93F89C6A56B93E76A7D5 /* pstck_card_discover@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_discover@2x.png"; path = "Paystack/Resources/Images/pstck_card_discover@2x.png"; sourceTree = "<group>"; };
+		69A10FC90D421DDA6F0F88667D714797 /* Pods-sample-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-app.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB3D8BB282E5A374EA62F33A23F2278 /* pstck_card_cvc_amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_cvc_amex.png; path = Paystack/Resources/Images/pstck_card_cvc_amex.png; sourceTree = "<group>"; };
+		6F0ED2756B682DC27AFB9C162FE8D9CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E139B560E92FB15483B4CAFA29DCFE /* PSTCKRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKRSA.h; path = Paystack/RSA/PSTCKRSA.h; sourceTree = "<group>"; };
+		734DFE781B296A5C004E8DDF326ABD2D /* PSTCKTransactionParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKTransactionParams.h; path = Paystack/PublicHeaders/PSTCKTransactionParams.h; sourceTree = "<group>"; };
+		7AEFFB1BD3237BEA18FF678CB44D96B3 /* pstck_card_visa@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_visa@2x.png"; path = "Paystack/Resources/Images/pstck_card_visa@2x.png"; sourceTree = "<group>"; };
+		7C0F1628460657D2DEE2744AA9EB0B21 /* Pods-sample-appUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sample-appUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E92B55D7667C2DC346500C2E13166E3 /* pstck_card_placeholder@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_placeholder@3x.png"; path = "Paystack/Resources/Images/pstck_card_placeholder@3x.png"; sourceTree = "<group>"; };
+		806DDE418BF42E6C0462659C481B84C0 /* PSTCKAPIClient+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PSTCKAPIClient+Private.h"; path = "Paystack/PSTCKAPIClient+Private.h"; sourceTree = "<group>"; };
+		80F77A6C3D046CE8C04F278784CEEC5A /* PSTCKToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKToken.h; path = Paystack/PublicHeaders/PSTCKToken.h; sourceTree = "<group>"; };
+		828C49317234801C465F31B3EEA82F47 /* PSTCKCardValidationState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKCardValidationState.h; path = Paystack/PublicHeaders/PSTCKCardValidationState.h; sourceTree = "<group>"; };
+		82A0BA37E83070050AC9A96EF05F04A6 /* Pods-sample-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		846E3EFA7DD00F181D11FCDB5D579692 /* Pods-sample-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		866DCE7A4C8B5EDAA23F2C185E6F7686 /* NSDictionary+Paystack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Paystack.h"; path = "Paystack/NSDictionary+Paystack.h"; sourceTree = "<group>"; };
+		86D058F1727F4D547B6D403A9DB09BA1 /* NSDictionary+Paystack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Paystack.m"; path = "Paystack/NSDictionary+Paystack.m"; sourceTree = "<group>"; };
+		86E6C96A447CD1B6CF95553B73B377DA /* Pods-sample-appUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-sample-appUITests.modulemap"; sourceTree = "<group>"; };
+		87685B7DC4789CA9CDF4F185702C2019 /* PSTCKFormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKFormTextField.h; path = Paystack/UI/PSTCKFormTextField.h; sourceTree = "<group>"; };
+		88D75F9A64C4A18AAA1D3B8BED7B7B2D /* PSTCKTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKTransaction.h; path = Paystack/PublicHeaders/PSTCKTransaction.h; sourceTree = "<group>"; };
+		89BF74AEA4D208C461A71C56BBE4B440 /* PaystackError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PaystackError.h; path = Paystack/PublicHeaders/PaystackError.h; sourceTree = "<group>"; };
+		8D493D282BB4C8B7299CF9AC20B3FC71 /* Pods-sample-app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-sample-app.modulemap"; sourceTree = "<group>"; };
+		90CA65AFDD5E753581F057BB432D41F4 /* ValidatorDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatorDictionary.swift; path = Paystack/Validator/ValidatorDictionary.swift; sourceTree = "<group>"; };
+		915F1F9542212AACB28CA05D3B64C84F /* Pods-sample-appUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sample-appUITests-dummy.m"; sourceTree = "<group>"; };
+		938F58AE8CD37924B2DE7052EBB6295B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9497064D24ECEDBB7C39110B6A8C68DD /* PSTCKRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKRSA.m; path = Paystack/RSA/PSTCKRSA.m; sourceTree = "<group>"; };
+		979DC62148D89F2D7534C9BCC5ED147B /* PSTCKPaymentCardTextFieldViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKPaymentCardTextFieldViewModel.m; path = Paystack/UI/PSTCKPaymentCardTextFieldViewModel.m; sourceTree = "<group>"; };
+		99567AF67A049FD617350DB58F133A35 /* pstck_card_verve@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_verve@3x.png"; path = "Paystack/Resources/Images/pstck_card_verve@3x.png"; sourceTree = "<group>"; };
+		9CD2BB58B68AB3BC4E1F0800BC38AE44 /* Pods_sample_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_sample_app.framework; path = "Pods-sample-app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04E3E5977680059F301C835C8581E6F /* pstck_card_placeholder@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_placeholder@2x.png"; path = "Paystack/Resources/Images/pstck_card_placeholder@2x.png"; sourceTree = "<group>"; };
+		A32D1C75A170436A162BF12501D4E755 /* Paystack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Paystack-umbrella.h"; sourceTree = "<group>"; };
+		A3EA5CEA6C7CADAA1227C2DCCAB66C6B /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = Paystack/Validator/RequiredRule.swift; sourceTree = "<group>"; };
+		A905E2ED13F7C0057A78B2C3A5F8E2AB /* Pods-sample-app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sample-app-dummy.m"; sourceTree = "<group>"; };
+		AAF15BD9A34C4E2E3D19BBB2864C65AD /* pstck_card_jcb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_jcb@3x.png"; path = "Paystack/Resources/Images/pstck_card_jcb@3x.png"; sourceTree = "<group>"; };
+		ABB8DE16C02A11193218222CACDED143 /* Pods-sample-appUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sample-appUITests-umbrella.h"; sourceTree = "<group>"; };
+		AC288B4A9B67DC859D108A17EB21407C /* PSTCKToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKToken.m; path = Paystack/PSTCKToken.m; sourceTree = "<group>"; };
+		AD5C139F15ABBA20FF37D936D06A0030 /* pstck_card_cvc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_cvc@2x.png"; path = "Paystack/Resources/Images/pstck_card_cvc@2x.png"; sourceTree = "<group>"; };
+		AE5357EE9B0D9312EE9D7C38B180A91B /* pstck_card_diners@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_diners@3x.png"; path = "Paystack/Resources/Images/pstck_card_diners@3x.png"; sourceTree = "<group>"; };
+		B35F57534CF33CD966BABDDE0EFE48CF /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Paystack/Validator/ValidationError.swift; sourceTree = "<group>"; };
+		B3FA05510BB931DD79322A574883D77D /* pstck_card_placeholder.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_placeholder.png; path = Paystack/Resources/Images/pstck_card_placeholder.png; sourceTree = "<group>"; };
+		B4BB67D9F2BDDDD92507E815CB1F3A09 /* Pods_sample_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_sample_appUITests.framework; path = "Pods-sample-appUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61177ACB6F56FDD03FC67330C104972 /* PSTCKAPIPostRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKAPIPostRequest.h; path = Paystack/PSTCKAPIPostRequest.h; sourceTree = "<group>"; };
+		B71B8B4A9339B11B49041E081EE4F250 /* Pods-sample-app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sample-app-umbrella.h"; sourceTree = "<group>"; };
+		B77A87025CE122FC626708D42ADA86D4 /* PSTCKAuthViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKAuthViewController.m; path = Paystack/UI/PSTCKAuthViewController.m; sourceTree = "<group>"; };
+		B930FCDBA6E21F7FE5417C770C6F8112 /* pstck_card_amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_amex@2x.png"; path = "Paystack/Resources/Images/pstck_card_amex@2x.png"; sourceTree = "<group>"; };
+		BC147032D0E2751106F06ACBF502EDFA /* KeyboardHandlingVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardHandlingVC.swift; path = Paystack/KeyboardHandlingVC.swift; sourceTree = "<group>"; };
+		C0311E2A1EE55829A97FDC3938390CCB /* pstck_card_discover.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_discover.png; path = Paystack/Resources/Images/pstck_card_discover.png; sourceTree = "<group>"; };
+		C139AA0DFEA0E955BD3B99D55D5A6757 /* pstck_card_cvc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_cvc.png; path = Paystack/Resources/Images/pstck_card_cvc.png; sourceTree = "<group>"; };
+		C4367093043C829A5C5418AF361421DF /* PSTCKTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKTransaction.m; path = Paystack/PSTCKTransaction.m; sourceTree = "<group>"; };
+		C83D8CA875589F73144CE03F8740B7C5 /* PSTCKTransactionParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKTransactionParams.m; path = Paystack/PSTCKTransactionParams.m; sourceTree = "<group>"; };
+		CD2626425587227D705A4231C2CD5A59 /* PSTCKCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKCard.h; path = Paystack/PublicHeaders/PSTCKCard.h; sourceTree = "<group>"; };
+		D4702C13F35E89B25786CD7FBE15D323 /* pstck_card_cvc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_cvc@3x.png"; path = "Paystack/Resources/Images/pstck_card_cvc@3x.png"; sourceTree = "<group>"; };
+		D5B30FE1D6DA649813A27D28D0FB1EFC /* PSTCKPaymentCardTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKPaymentCardTextField.h; path = Paystack/PublicHeaders/UI/PSTCKPaymentCardTextField.h; sourceTree = "<group>"; };
+		D5D26556979F5BD41CE8F62AE33EBBC1 /* PSTCKFormEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKFormEncoder.m; path = Paystack/PSTCKFormEncoder.m; sourceTree = "<group>"; };
+		D6D1AB77D4520D72544491CBAC414DE6 /* pstck_card_visa.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_visa.png; path = Paystack/Resources/Images/pstck_card_visa.png; sourceTree = "<group>"; };
+		D973DBC158B01F10E71A4F209042AB8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C9DD9A9AC42B9ABE6FCBC1194D13E5 /* pstck_card_verve@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_verve@2x.png"; path = "Paystack/Resources/Images/pstck_card_verve@2x.png"; sourceTree = "<group>"; };
+		DD06AC034A4DCDD3F4785CEF25B878A4 /* PSTCKAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKAPIClient.h; path = Paystack/PublicHeaders/PSTCKAPIClient.h; sourceTree = "<group>"; };
+		DD4A8D42A6C95E0E944F7B96D9814F9C /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Paystack/Validator/Validator.swift; sourceTree = "<group>"; };
+		E09B6833DA4604C5A50C519364463D07 /* Cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Cancel@2x.png"; path = "Paystack/Resources/Images/Cancel@2x.png"; sourceTree = "<group>"; };
+		E48BF990941182C8EDC3F8B0B16AE648 /* pstck_card_amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_amex.png; path = Paystack/Resources/Images/pstck_card_amex.png; sourceTree = "<group>"; };
+		E5D8D48A388132A96986359BCAB9AB89 /* pstck_card_cvc_amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_cvc_amex@2x.png"; path = "Paystack/Resources/Images/pstck_card_cvc_amex@2x.png"; sourceTree = "<group>"; };
+		E5F1009E345202213FC8A31EEEE20926 /* PSTCKCategoryLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKCategoryLoader.h; path = Paystack/PSTCKCategoryLoader.h; sourceTree = "<group>"; };
+		E6F90630CED969877914E3E5EDDF5EB4 /* pstck_card_discover@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_discover@3x.png"; path = "Paystack/Resources/Images/pstck_card_discover@3x.png"; sourceTree = "<group>"; };
+		EDFB2C6AB450EB306BE4A8B93D8AB8C0 /* Pods-sample-appUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-appUITests-frameworks.sh"; sourceTree = "<group>"; };
+		F1C23F799F560D2D2C5D80CA105D6180 /* Paystack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Paystack-dummy.m"; sourceTree = "<group>"; };
+		F23D6EA0643244A278E8E09F23029789 /* PSTCKAPIClientExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PSTCKAPIClientExtension.swift; path = Paystack/PSTCKAPIClientExtension.swift; sourceTree = "<group>"; };
+		F2FCC6A530FCDD76D1CD4BAAB243E6E4 /* Pods-sample-appTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sample-appTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F33D42B31181BD327D040610C8DD2F31 /* PSTCKCardValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSTCKCardValidator.h; path = Paystack/PublicHeaders/PSTCKCardValidator.h; sourceTree = "<group>"; };
+		F5426D1D37D522E936F49D69ABCE75BC /* Pods_sample_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_sample_appTests.framework; path = "Pods-sample-appTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E12099477E53E81E3A9B03C42B6CD2 /* pstck_card_placeholder_template@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_placeholder_template@2x.png"; path = "Paystack/Resources/Images/pstck_card_placeholder_template@2x.png"; sourceTree = "<group>"; };
+		F667F95DE960AA6BCC324A7751931398 /* PSTCKAPIPostRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSTCKAPIPostRequest.m; path = Paystack/PSTCKAPIPostRequest.m; sourceTree = "<group>"; };
+		F6AB50AFBB0506414DBBB7962477A5FA /* Paystack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Paystack.framework; path = Paystack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D308FED145FD6B8F77C572A7CEE035 /* pstck_card_jcb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pstck_card_jcb.png; path = Paystack/Resources/Images/pstck_card_jcb.png; sourceTree = "<group>"; };
+		FAAA75E22C18791D269B01B7C784D42C /* ButtonExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonExtension.swift; path = Paystack/ButtonExtension.swift; sourceTree = "<group>"; };
+		FB31A2A40EF38589FAE0CDBE959B99AC /* pstck_card_mastercard@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pstck_card_mastercard@2x.png"; path = "Paystack/Resources/Images/pstck_card_mastercard@2x.png"; sourceTree = "<group>"; };
+		FCA759B1346B1E10E31627D4F980B887 /* UIImage+Paystack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Paystack.m"; path = "Paystack/UI/UIImage+Paystack.m"; sourceTree = "<group>"; };
+		FED0C297B42093EFDD548EA2BB0A041C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1078538B7D440D4B8BBE2598F34CBEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C38D0FB9D32B70AC064B65F5A972B69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F469E4FC0AFB6EAE5974300612D0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254B018E3E0BCCFB397F39F83538AF37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A86783175F8EAE52AA991A667083FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A4986C4EE59F49AF7659FFE32D169A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F312983D774953B59BFAD7767D29FCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A14A719B373BA80EBFAC40A34245340 /* Foundation.framework in Frameworks */,
+				C4D74F31066F3C0B833788FB4ED5633E /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23942FF3A0DD64EBF442C61B2C1D4E72 /* Paystack */ = {
+			isa = PBXGroup;
+			children = (
+				337055B590110CBB40C1E3BD766B651B /* Core */,
+				CACF95707AD21187161E36CD1517160A /* Support Files */,
+			);
+			name = Paystack;
+			path = Paystack;
+			sourceTree = "<group>";
+		};
+		2D098EE341FD52CA25999A297E640243 /* Pods-sample-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D973DBC158B01F10E71A4F209042AB8E /* Info.plist */,
+				86E6C96A447CD1B6CF95553B73B377DA /* Pods-sample-appUITests.modulemap */,
+				7C0F1628460657D2DEE2744AA9EB0B21 /* Pods-sample-appUITests-acknowledgements.markdown */,
+				346802E110F6331F811F23BE3A6F87F5 /* Pods-sample-appUITests-acknowledgements.plist */,
+				915F1F9542212AACB28CA05D3B64C84F /* Pods-sample-appUITests-dummy.m */,
+				EDFB2C6AB450EB306BE4A8B93D8AB8C0 /* Pods-sample-appUITests-frameworks.sh */,
+				3F3E692AC5A5B60CB1050F60724C8EEF /* Pods-sample-appUITests-resources.sh */,
+				ABB8DE16C02A11193218222CACDED143 /* Pods-sample-appUITests-umbrella.h */,
+				5A87C1A0DC7C17E476BAAE1659729563 /* Pods-sample-appUITests.debug.xcconfig */,
+				846E3EFA7DD00F181D11FCDB5D579692 /* Pods-sample-appUITests.release.xcconfig */,
+			);
+			name = "Pods-sample-appUITests";
+			path = "Target Support Files/Pods-sample-appUITests";
+			sourceTree = "<group>";
+		};
+		337055B590110CBB40C1E3BD766B651B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA75E22C18791D269B01B7C784D42C /* ButtonExtension.swift */,
+				BC147032D0E2751106F06ACBF502EDFA /* KeyboardHandlingVC.swift */,
+				866DCE7A4C8B5EDAA23F2C185E6F7686 /* NSDictionary+Paystack.h */,
+				86D058F1727F4D547B6D403A9DB09BA1 /* NSDictionary+Paystack.m */,
+				2009FAB6A811FD23AB148100ABACD17C /* Paystack.h */,
+				89BF74AEA4D208C461A71C56BBE4B440 /* PaystackError.h */,
+				3249CA8824AFCF20EC15F50883D387BF /* PaystackError.m */,
+				3A5AC2592639294B7D69D9F2D14D3808 /* PSTCKAddressViewController.swift */,
+				DD06AC034A4DCDD3F4785CEF25B878A4 /* PSTCKAPIClient.h */,
+				5B5A73CA2E0721A8CDF91D66C2F21AFB /* PSTCKAPIClient.m */,
+				806DDE418BF42E6C0462659C481B84C0 /* PSTCKAPIClient+Private.h */,
+				F23D6EA0643244A278E8E09F23029789 /* PSTCKAPIClientExtension.swift */,
+				B61177ACB6F56FDD03FC67330C104972 /* PSTCKAPIPostRequest.h */,
+				F667F95DE960AA6BCC324A7751931398 /* PSTCKAPIPostRequest.m */,
+				271F8A9A2EA9C0EE4C3BE771520CD96F /* PSTCKAPIResponseDecodable.h */,
+				3A0BD6A85FA8025F51A493414F2DA607 /* PSTCKAuthViewController.h */,
+				B77A87025CE122FC626708D42ADA86D4 /* PSTCKAuthViewController.m */,
+				CD2626425587227D705A4231C2CD5A59 /* PSTCKCard.h */,
+				065CAC40EA1159E2666F32F8142963F8 /* PSTCKCard.m */,
+				2F9107435D4697211C21E82A1598CB1E /* PSTCKCardBrand.h */,
+				3D57A32149C4EF658F5B9EBBC36777F0 /* PSTCKCardParams.h */,
+				391534921CB4A92CA02C0EFA6AB8C472 /* PSTCKCardParams.m */,
+				828C49317234801C465F31B3EEA82F47 /* PSTCKCardValidationState.h */,
+				F33D42B31181BD327D040610C8DD2F31 /* PSTCKCardValidator.h */,
+				201E33D0A25939221A1054BD832BED5B /* PSTCKCardValidator.m */,
+				E5F1009E345202213FC8A31EEEE20926 /* PSTCKCategoryLoader.h */,
+				28ABFCE0AD4BA3DAB04C78317F4D19D5 /* PSTCKCategoryLoader.m */,
+				4BD15AFF57C0B260998359AF63B87543 /* PSTCKFormEncodable.h */,
+				38171CC74FE2A2889EE81E094EECF3EC /* PSTCKFormEncoder.h */,
+				D5D26556979F5BD41CE8F62AE33EBBC1 /* PSTCKFormEncoder.m */,
+				87685B7DC4789CA9CDF4F185702C2019 /* PSTCKFormTextField.h */,
+				48EC725888121FE1603A4966C13C007C /* PSTCKFormTextField.m */,
+				D5B30FE1D6DA649813A27D28D0FB1EFC /* PSTCKPaymentCardTextField.h */,
+				6432C45F126AF099E4B0C42048710A7C /* PSTCKPaymentCardTextField.m */,
+				083C2D0617239CB073FBAFB9AE99FA51 /* PSTCKPaymentCardTextFieldViewModel.h */,
+				979DC62148D89F2D7534C9BCC5ED147B /* PSTCKPaymentCardTextFieldViewModel.m */,
+				72E139B560E92FB15483B4CAFA29DCFE /* PSTCKRSA.h */,
+				9497064D24ECEDBB7C39110B6A8C68DD /* PSTCKRSA.m */,
+				80F77A6C3D046CE8C04F278784CEEC5A /* PSTCKToken.h */,
+				AC288B4A9B67DC859D108A17EB21407C /* PSTCKToken.m */,
+				88D75F9A64C4A18AAA1D3B8BED7B7B2D /* PSTCKTransaction.h */,
+				C4367093043C829A5C5418AF361421DF /* PSTCKTransaction.m */,
+				734DFE781B296A5C004E8DDF326ABD2D /* PSTCKTransactionParams.h */,
+				C83D8CA875589F73144CE03F8740B7C5 /* PSTCKTransactionParams.m */,
+				58E1AD6A003C77E41874FC271BE2F140 /* PSTCKValidationParams.h */,
+				461D0BE06582B6280B7C8AF1E8A8517A /* PSTCKValidationParams.m */,
+				A3EA5CEA6C7CADAA1227C2DCCAB66C6B /* RequiredRule.swift */,
+				1D03944F54765EF3E17DDB954AD36D7A /* Rule.swift */,
+				6116FAA46B0505ABD4170F06D6964937 /* UIImage+Paystack.h */,
+				FCA759B1346B1E10E31627D4F980B887 /* UIImage+Paystack.m */,
+				05AED5C2F0CCC0F8573EB32602F9A4EB /* Validatable.swift */,
+				5958DD84D51E32D4648450C5A946D57F /* ValidationDelegate.swift */,
+				B35F57534CF33CD966BABDDE0EFE48CF /* ValidationError.swift */,
+				109FB0E8CDC52D771B23AD2E3F04CDEF /* ValidationRule.swift */,
+				DD4A8D42A6C95E0E944F7B96D9814F9C /* Validator.swift */,
+				90CA65AFDD5E753581F057BB432D41F4 /* ValidatorDictionary.swift */,
+				3A42E9D13F866B9D8674EF920DCBE60E /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3A42E9D13F866B9D8674EF920DCBE60E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00312C846E3AF2E204EE88890A588D8C /* Cancel.png */,
+				E09B6833DA4604C5A50C519364463D07 /* Cancel@2x.png */,
+				512541386AB758D29076F77052CF8D72 /* Cancel@3x.png */,
+				56111C7EC427EE0DA7881D6A75B9A224 /* Images */,
+				E48BF990941182C8EDC3F8B0B16AE648 /* pstck_card_amex.png */,
+				B930FCDBA6E21F7FE5417C770C6F8112 /* pstck_card_amex@2x.png */,
+				3836F4420505097298F04DA99C6757DC /* pstck_card_amex@3x.png */,
+				C139AA0DFEA0E955BD3B99D55D5A6757 /* pstck_card_cvc.png */,
+				AD5C139F15ABBA20FF37D936D06A0030 /* pstck_card_cvc@2x.png */,
+				D4702C13F35E89B25786CD7FBE15D323 /* pstck_card_cvc@3x.png */,
+				6BB3D8BB282E5A374EA62F33A23F2278 /* pstck_card_cvc_amex.png */,
+				E5D8D48A388132A96986359BCAB9AB89 /* pstck_card_cvc_amex@2x.png */,
+				43F5A5005680874637982DF2DA7C4225 /* pstck_card_cvc_amex@3x.png */,
+				2EF77F88619FC74FDA7D68F835CD075C /* pstck_card_diners.png */,
+				37DC0C2AB109BA5796BA1044B54D2356 /* pstck_card_diners@2x.png */,
+				AE5357EE9B0D9312EE9D7C38B180A91B /* pstck_card_diners@3x.png */,
+				C0311E2A1EE55829A97FDC3938390CCB /* pstck_card_discover.png */,
+				65DA5AE5B78B93F89C6A56B93E76A7D5 /* pstck_card_discover@2x.png */,
+				E6F90630CED969877914E3E5EDDF5EB4 /* pstck_card_discover@3x.png */,
+				F7D308FED145FD6B8F77C572A7CEE035 /* pstck_card_jcb.png */,
+				056D2328FB53C7BD0CA504C24B257C63 /* pstck_card_jcb@2x.png */,
+				AAF15BD9A34C4E2E3D19BBB2864C65AD /* pstck_card_jcb@3x.png */,
+				17154D8C80C893661C152C0E916383A5 /* pstck_card_mastercard.png */,
+				FB31A2A40EF38589FAE0CDBE959B99AC /* pstck_card_mastercard@2x.png */,
+				1E2CC2F1F48FDBAFCE87B7303A8ACBF2 /* pstck_card_mastercard@3x.png */,
+				B3FA05510BB931DD79322A574883D77D /* pstck_card_placeholder.png */,
+				A04E3E5977680059F301C835C8581E6F /* pstck_card_placeholder@2x.png */,
+				7E92B55D7667C2DC346500C2E13166E3 /* pstck_card_placeholder@3x.png */,
+				2E61D9DD901A4444973C48D1763ED91A /* pstck_card_placeholder_template.png */,
+				F5E12099477E53E81E3A9B03C42B6CD2 /* pstck_card_placeholder_template@2x.png */,
+				1EC76F11946348C54340B9BB3D1253C1 /* pstck_card_placeholder_template@3x.png */,
+				1A4598A3A89650DDCB565D35829E5650 /* pstck_card_verve.png */,
+				D9C9DD9A9AC42B9ABE6FCBC1194D13E5 /* pstck_card_verve@2x.png */,
+				99567AF67A049FD617350DB58F133A35 /* pstck_card_verve@3x.png */,
+				D6D1AB77D4520D72544491CBAC414DE6 /* pstck_card_visa.png */,
+				7AEFFB1BD3237BEA18FF678CB44D96B3 /* pstck_card_visa@2x.png */,
+				4BF7C528C97D9A45523EF35EBB1FBBEC /* pstck_card_visa@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3B74F6E29DDA63438528FE58BD6FEF55 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				29232C0A90275E386A312F9C83843838 /* Foundation.framework */,
+				938F58AE8CD37924B2DE7052EBB6295B /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B74F6E29DDA63438528FE58BD6FEF55 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9086B6EF922D1928DF119048540E997B /* Pods */,
+				ED9BF613DB6A89AD48EAC688FA5E6E68 /* Products */,
+				FDAB4DB4146567261A06AA74A4A3D066 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9086B6EF922D1928DF119048540E997B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23942FF3A0DD64EBF442C61B2C1D4E72 /* Paystack */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CACF95707AD21187161E36CD1517160A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FED0C297B42093EFDD548EA2BB0A041C /* Info.plist */,
+				3271C508084DBA707E2820F24BADE71D /* Paystack.modulemap */,
+				0123EF110CCF3A89D571C4481809F951 /* Paystack.xcconfig */,
+				F1C23F799F560D2D2C5D80CA105D6180 /* Paystack-dummy.m */,
+				41780722AD1230A7B58DB049C3930BE4 /* Paystack-prefix.pch */,
+				A32D1C75A170436A162BF12501D4E755 /* Paystack-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Paystack";
+			sourceTree = "<group>";
+		};
+		CC7C68F13F58EC0B3B641E17A4EFFF04 /* Pods-sample-app */ = {
+			isa = PBXGroup;
+			children = (
+				44EB9D1879A73009DD9330FF5B77512F /* Info.plist */,
+				8D493D282BB4C8B7299CF9AC20B3FC71 /* Pods-sample-app.modulemap */,
+				3A004801C6C825D1A2430A53307B8392 /* Pods-sample-app-acknowledgements.markdown */,
+				41E15211FAE0D6E6228A70E300407313 /* Pods-sample-app-acknowledgements.plist */,
+				A905E2ED13F7C0057A78B2C3A5F8E2AB /* Pods-sample-app-dummy.m */,
+				09FC00CF0E011E6C6881AB748C9460C7 /* Pods-sample-app-frameworks.sh */,
+				2C0B06952EB4AC92F08B0CC2E33E0013 /* Pods-sample-app-resources.sh */,
+				B71B8B4A9339B11B49041E081EE4F250 /* Pods-sample-app-umbrella.h */,
+				69A10FC90D421DDA6F0F88667D714797 /* Pods-sample-app.debug.xcconfig */,
+				316527BE71B99FB791AE712A52FCDBDF /* Pods-sample-app.release.xcconfig */,
+			);
+			name = "Pods-sample-app";
+			path = "Target Support Files/Pods-sample-app";
+			sourceTree = "<group>";
+		};
+		E83DF5565E6CD2DFEF0F14B772C9ADEC /* Pods-sample-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F0ED2756B682DC27AFB9C162FE8D9CD /* Info.plist */,
+				48438103020042DB7CA5EA9381BBB2B2 /* Pods-sample-appTests.modulemap */,
+				3ACF1B9E3AD1C0DF7821625095D3EA47 /* Pods-sample-appTests-acknowledgements.markdown */,
+				F2FCC6A530FCDD76D1CD4BAAB243E6E4 /* Pods-sample-appTests-acknowledgements.plist */,
+				0E5FA8992D273C08E7CAF541F8516EBA /* Pods-sample-appTests-dummy.m */,
+				0ED90D3275CCF05C6780433B15014E57 /* Pods-sample-appTests-frameworks.sh */,
+				11E1312585DAF0081571508BD1A5760F /* Pods-sample-appTests-resources.sh */,
+				4D9614289F8F8B1F2DF2F870ED4D920E /* Pods-sample-appTests-umbrella.h */,
+				82A0BA37E83070050AC9A96EF05F04A6 /* Pods-sample-appTests.debug.xcconfig */,
+				59437956ACD962565D009499317607D3 /* Pods-sample-appTests.release.xcconfig */,
+			);
+			name = "Pods-sample-appTests";
+			path = "Target Support Files/Pods-sample-appTests";
+			sourceTree = "<group>";
+		};
+		ED9BF613DB6A89AD48EAC688FA5E6E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB50AFBB0506414DBBB7962477A5FA /* Paystack.framework */,
+				9CD2BB58B68AB3BC4E1F0800BC38AE44 /* Pods_sample_app.framework */,
+				F5426D1D37D522E936F49D69ABCE75BC /* Pods_sample_appTests.framework */,
+				B4BB67D9F2BDDDD92507E815CB1F3A09 /* Pods_sample_appUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDAB4DB4146567261A06AA74A4A3D066 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C68F13F58EC0B3B641E17A4EFFF04 /* Pods-sample-app */,
+				E83DF5565E6CD2DFEF0F14B772C9ADEC /* Pods-sample-appTests */,
+				2D098EE341FD52CA25999A297E640243 /* Pods-sample-appUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AF477D476F6DC9AC489F6B7639027F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE7367C4F30532059AF502C37C79D17 /* Pods-sample-app-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B23595A79217DBC51A840EE230D362F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1E9C48E127F2E90F5CEB7D5DE1ADCA /* Pods-sample-appTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B387A3BACB555D8B49EA076191CBCC09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AED9E9C9ED67C49A86A3FCF0736433 /* NSDictionary+Paystack.h in Headers */,
+				21C725150AE5F6410206CB9BBB12B3A5 /* Paystack-umbrella.h in Headers */,
+				46CFBF9BB1006214EF0627EBFD4113B5 /* Paystack.h in Headers */,
+				5A93BB6ECB95E537719072EC7C63C914 /* PaystackError.h in Headers */,
+				40524C9F90B7EF46B8812E02D4A61F2A /* PSTCKAPIClient+Private.h in Headers */,
+				9D4DA34700C1A2FB2703C0B19F9D1C30 /* PSTCKAPIClient.h in Headers */,
+				D5C721303970A9B0B65FE47978F32467 /* PSTCKAPIPostRequest.h in Headers */,
+				483957F2AAF3391D454620C581D9FE56 /* PSTCKAPIResponseDecodable.h in Headers */,
+				78DB44450D108470831EFF1015534932 /* PSTCKAuthViewController.h in Headers */,
+				0163AA134AA63C753BF9F91D976AE4FA /* PSTCKCard.h in Headers */,
+				8B839E0D163DCF7F8FDEBE6FE6CE5CEB /* PSTCKCardBrand.h in Headers */,
+				A6BA0AFF71E323A9654ED8D947C048DF /* PSTCKCardParams.h in Headers */,
+				7402F996C1B60BCE95203903BFFF34DC /* PSTCKCardValidationState.h in Headers */,
+				DAE459FCD3A99F721B11B151410189DE /* PSTCKCardValidator.h in Headers */,
+				BB684493C67D3C8A92CD0E81C2F159AC /* PSTCKCategoryLoader.h in Headers */,
+				75159E201BB138D5C91D990FEC3C2278 /* PSTCKFormEncodable.h in Headers */,
+				2A69E590A172E834EF767DDCA1AA0479 /* PSTCKFormEncoder.h in Headers */,
+				DA1AEB2B822FE560FD0E758EDF7B9B0B /* PSTCKFormTextField.h in Headers */,
+				F280BF789A4C9384DADB693E1F7035E6 /* PSTCKPaymentCardTextField.h in Headers */,
+				DE306B6BF52D9AA075327FBC09E5C711 /* PSTCKPaymentCardTextFieldViewModel.h in Headers */,
+				969ED33D0B2737BFBD91AE7137462DE8 /* PSTCKRSA.h in Headers */,
+				71A69AF2FFC7F2CBD6501161D3127A4A /* PSTCKToken.h in Headers */,
+				BB712C7E0AB0D7C109A180198A5036FC /* PSTCKTransaction.h in Headers */,
+				EB9E23B52FC54EF3A735E63A015E2D2A /* PSTCKTransactionParams.h in Headers */,
+				628D04B64054480AA3FA6F78F75A9539 /* PSTCKValidationParams.h in Headers */,
+				89490C117C7DFC0D2E28DDD0772EA39D /* UIImage+Paystack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60B39257F98CBA181BE8038CF2E5891 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4975B20D4085CD068FF670AAC5241C67 /* Pods-sample-appUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F6B3A02F43B7A5E7B24383A351AD835 /* Paystack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F1AA3D495FD308A2C2989A2870B5C6B /* Build configuration list for PBXNativeTarget "Paystack" */;
+			buildPhases = (
+				B387A3BACB555D8B49EA076191CBCC09 /* Headers */,
+				17FC28380C77C0B54B66871EE2316F9E /* Sources */,
+				F312983D774953B59BFAD7767D29FCBF /* Frameworks */,
+				339CC4FFF913A618CD916CEDBB4900FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Paystack;
+			productName = Paystack;
+			productReference = F6AB50AFBB0506414DBBB7962477A5FA /* Paystack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FD48639237F8DFF4FB60D362629452C /* Pods-sample-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBFB8252530A6A643CBB7943AD7B7808 /* Build configuration list for PBXNativeTarget "Pods-sample-appUITests" */;
+			buildPhases = (
+				C60B39257F98CBA181BE8038CF2E5891 /* Headers */,
+				27E39AFE704A3DD793C34D0DBB3FF13F /* Sources */,
+				1078538B7D440D4B8BBE2598F34CBEB8 /* Frameworks */,
+				D2680B8949A6C2769192189EDDB7F67B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849DD08B4D6E1C3E8CB2A96342949A1F /* PBXTargetDependency */,
+			);
+			name = "Pods-sample-appUITests";
+			productName = "Pods-sample-appUITests";
+			productReference = B4BB67D9F2BDDDD92507E815CB1F3A09 /* Pods_sample_appUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C23A32C5645205116EF0C9CE2002206D /* Pods-sample-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E961F9544BA75BDBEFF29F5F21601C83 /* Build configuration list for PBXNativeTarget "Pods-sample-app" */;
+			buildPhases = (
+				0AF477D476F6DC9AC489F6B7639027F0 /* Headers */,
+				6D9A8076EFA9D7A4AC57DA519EF568EE /* Sources */,
+				9A86783175F8EAE52AA991A667083FBE /* Frameworks */,
+				A9B3D5D6CFD18A5B7E81247233347B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7E57D6679B89734F642393A09A53438 /* PBXTargetDependency */,
+			);
+			name = "Pods-sample-app";
+			productName = "Pods-sample-app";
+			productReference = 9CD2BB58B68AB3BC4E1F0800BC38AE44 /* Pods_sample_app.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9B06868143E47115DCD03CD89A8AEFD /* Pods-sample-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4297F251474966ADE0655584CAFB8E4 /* Build configuration list for PBXNativeTarget "Pods-sample-appTests" */;
+			buildPhases = (
+				3B23595A79217DBC51A840EE230D362F /* Headers */,
+				FD647B12DCF9393103B6A1DACBF5BA6D /* Sources */,
+				31F469E4FC0AFB6EAE5974300612D0EF /* Frameworks */,
+				AC1B0564A26453F802A8F18AB24E18C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9830503718D055F26ABCC428F9D1820C /* PBXTargetDependency */,
+			);
+			name = "Pods-sample-appTests";
+			productName = "Pods-sample-appTests";
+			productReference = F5426D1D37D522E936F49D69ABCE75BC /* Pods_sample_appTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = ED9BF613DB6A89AD48EAC688FA5E6E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F6B3A02F43B7A5E7B24383A351AD835 /* Paystack */,
+				C23A32C5645205116EF0C9CE2002206D /* Pods-sample-app */,
+				C9B06868143E47115DCD03CD89A8AEFD /* Pods-sample-appTests */,
+				9FD48639237F8DFF4FB60D362629452C /* Pods-sample-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		339CC4FFF913A618CD916CEDBB4900FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1B197B023CCC6992F0E3981D7D8629 /* Cancel.png in Resources */,
+				93A6A15E53931EEC71E8B14490BA6A55 /* Cancel@2x.png in Resources */,
+				825156CD9F28CC45C92E96528A153667 /* Cancel@3x.png in Resources */,
+				9C3685534B5144B77377833EF1A19CDC /* Images in Resources */,
+				8FC6316632E7148868EF47DF8733CEF4 /* pstck_card_amex.png in Resources */,
+				57B5FF4F0E403DD5DD6645B012E85316 /* pstck_card_amex@2x.png in Resources */,
+				5636A6907B5D566111D399F8648FC0E1 /* pstck_card_amex@3x.png in Resources */,
+				0F5B392981976E9E7A61A38296EFAC01 /* pstck_card_cvc.png in Resources */,
+				5EECDA3A458B08708349AB115448FA07 /* pstck_card_cvc@2x.png in Resources */,
+				4078C299B767048FB6AB53AEB217D289 /* pstck_card_cvc@3x.png in Resources */,
+				C44A7CD32E39124E737D98E6B84F28FF /* pstck_card_cvc_amex.png in Resources */,
+				32729DA0675155F77F1300D2960250FE /* pstck_card_cvc_amex@2x.png in Resources */,
+				9C8FCAF1A1724B54342CBE984FA068CD /* pstck_card_cvc_amex@3x.png in Resources */,
+				0B3A11406F3884F0FC60DDB6DA552C76 /* pstck_card_diners.png in Resources */,
+				3B969BD2C9EAE9A8A66C79831F7268E7 /* pstck_card_diners@2x.png in Resources */,
+				EB3200D2C63E1EF7814340E3337FF2B6 /* pstck_card_diners@3x.png in Resources */,
+				5F07B9CE6E763F3942C59A614A4823AA /* pstck_card_discover.png in Resources */,
+				FBBDDFB252AD2FB4BAC5A5E21278A8C4 /* pstck_card_discover@2x.png in Resources */,
+				C73391BAF7EEE4BDA080BD48DC55E8E8 /* pstck_card_discover@3x.png in Resources */,
+				9638BE4A07BD13B81E024ED1B0DB8DDC /* pstck_card_jcb.png in Resources */,
+				277497FEA4A549FFE1A7ED56404963E0 /* pstck_card_jcb@2x.png in Resources */,
+				1A4310FDCD3D817DCA09EAFA147CEA6B /* pstck_card_jcb@3x.png in Resources */,
+				74CC97FBEA1DF839B087DE8E1200D0CA /* pstck_card_mastercard.png in Resources */,
+				CD0D657655F427EB0D6D722B1E55038E /* pstck_card_mastercard@2x.png in Resources */,
+				C528300B730F57BED50F6CF32EC354F0 /* pstck_card_mastercard@3x.png in Resources */,
+				5B44739108BFBE510820721CDA5B6623 /* pstck_card_placeholder.png in Resources */,
+				94AA3D05643E54C7BD3485B33BCB59A2 /* pstck_card_placeholder@2x.png in Resources */,
+				1F5CC78C2C235A2C931ABA29E530F79A /* pstck_card_placeholder@3x.png in Resources */,
+				DC1191FFF9C908335D8F581A527C12D3 /* pstck_card_placeholder_template.png in Resources */,
+				69FB2632172CC0F075FD8A16A5DA828F /* pstck_card_placeholder_template@2x.png in Resources */,
+				2A020623BA96474DA688A90E81FE47CB /* pstck_card_placeholder_template@3x.png in Resources */,
+				6ADE56DD4C5A3D6F3133B46CD67DA3E9 /* pstck_card_verve.png in Resources */,
+				B5B44065360A8148757DFC1546AE41F7 /* pstck_card_verve@2x.png in Resources */,
+				259595D4FE4D24185EA804C73FF5FA94 /* pstck_card_verve@3x.png in Resources */,
+				45226EC196FBBC25EA8A0BCD0D60777D /* pstck_card_visa.png in Resources */,
+				81068BEE7FAEB92775F157C72D473902 /* pstck_card_visa@2x.png in Resources */,
+				C6F4C6DAC1D3D6EAAA14FF9038B1D365 /* pstck_card_visa@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B3D5D6CFD18A5B7E81247233347B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1B0564A26453F802A8F18AB24E18C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2680B8949A6C2769192189EDDB7F67B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17FC28380C77C0B54B66871EE2316F9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446DA2ED5BDD5A0DD8785D65623E946C /* ButtonExtension.swift in Sources */,
+				F13BF56831954DF57663579748B5E3A6 /* KeyboardHandlingVC.swift in Sources */,
+				2211B193C5CC098DD48F98B96A10B23F /* NSDictionary+Paystack.m in Sources */,
+				9BD1FF340A5CA56528E159B0BA4A4EAB /* Paystack-dummy.m in Sources */,
+				271CC9195E3A908DFE9A259DEE7F5E05 /* PaystackError.m in Sources */,
+				0DF7A0FCB0DD6A28F3EDBD918E29157A /* PSTCKAddressViewController.swift in Sources */,
+				8DAA4F32FA489D01403620BB5B22004A /* PSTCKAPIClient.m in Sources */,
+				16D150286DBFC14004F25AA27A4D237D /* PSTCKAPIClientExtension.swift in Sources */,
+				F04EAEC0A027CEED4A45B3F3647D6ECD /* PSTCKAPIPostRequest.m in Sources */,
+				01848CEF30B62E3E1D1B479BB8FD3CD7 /* PSTCKAuthViewController.m in Sources */,
+				35C37331A3331B4B4ACE879533235FA7 /* PSTCKCard.m in Sources */,
+				50425AB7805EB0ED56DDE09623AE36E9 /* PSTCKCardParams.m in Sources */,
+				A5428429C1D37D91605B07DC01FD16F7 /* PSTCKCardValidator.m in Sources */,
+				000B4D817B8C5A5FF0565C7D514C69B2 /* PSTCKCategoryLoader.m in Sources */,
+				4ACFCE8FF3C83C2DCC6A2879706CA63B /* PSTCKFormEncoder.m in Sources */,
+				123A13AD6652B7AA7EC22644184A2055 /* PSTCKFormTextField.m in Sources */,
+				434D3508C0702B87B4AA26EE8E9B717E /* PSTCKPaymentCardTextField.m in Sources */,
+				019091FDCAE82BA01F444C395C22432A /* PSTCKPaymentCardTextFieldViewModel.m in Sources */,
+				06A1EBD3AB84EBD17E6C04C827E3B199 /* PSTCKRSA.m in Sources */,
+				08C4B62CBD95217F466DEBE88D6A3C43 /* PSTCKToken.m in Sources */,
+				9D48FDFA983BD6B08152837729A492F8 /* PSTCKTransaction.m in Sources */,
+				CD6FF708F61B7330C7C32B671011B5D8 /* PSTCKTransactionParams.m in Sources */,
+				119433E21DE3C2E5D56E14518A3C8094 /* PSTCKValidationParams.m in Sources */,
+				CF7C622C35BD9E3D26921AA4D0A54079 /* RequiredRule.swift in Sources */,
+				FE5AAFA9629EC05DF1A91DCACF2944E9 /* Rule.swift in Sources */,
+				ACEB357F317817FEA1E473B10A0349E2 /* UIImage+Paystack.m in Sources */,
+				0987147F9DB36ADBF97188CEEF34AD7C /* Validatable.swift in Sources */,
+				E957BFA04D4217DB85E62B001BBC0E95 /* ValidationDelegate.swift in Sources */,
+				B08E056A462D4454713150654EC9FF8B /* ValidationError.swift in Sources */,
+				203933AA077FFA2C2A68AD24D49B4480 /* ValidationRule.swift in Sources */,
+				936991EF8025BA0BFBA001D1C0AB6DF1 /* Validator.swift in Sources */,
+				91B87677F06113346016AC0E753489E3 /* ValidatorDictionary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E39AFE704A3DD793C34D0DBB3FF13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADE40468BAD8005C47508B320058C5B /* Pods-sample-appUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9A8076EFA9D7A4AC57DA519EF568EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2DC725145D1D0D932CB32D8DC12DDC /* Pods-sample-app-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD647B12DCF9393103B6A1DACBF5BA6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FA151B3205FFE4CA5C613911116A6D /* Pods-sample-appTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		849DD08B4D6E1C3E8CB2A96342949A1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-sample-app";
+			target = C23A32C5645205116EF0C9CE2002206D /* Pods-sample-app */;
+			targetProxy = 1642519C921B8C5DF7C38EB93C1EC851 /* PBXContainerItemProxy */;
+		};
+		9830503718D055F26ABCC428F9D1820C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-sample-app";
+			target = C23A32C5645205116EF0C9CE2002206D /* Pods-sample-app */;
+			targetProxy = DBA97DD96353C3AB58A25512868610D3 /* PBXContainerItemProxy */;
+		};
+		A7E57D6679B89734F642393A09A53438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Paystack;
+			target = 9F6B3A02F43B7A5E7B24383A351AD835 /* Paystack */;
+			targetProxy = 077449C979419637F0AC1FE14E406097 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		045F359E074AB68342AFCA90B73D2D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A87C1A0DC7C17E476BAAE1659729563 /* Pods-sample-appUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sample-appUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sample-appUITests/Pods-sample-appUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		093B85E12FB61CCDB173CFA88282CA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59437956ACD962565D009499317607D3 /* Pods-sample-appTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sample-appTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sample-appTests/Pods-sample-appTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2073B33E79A34598D3D87DA4FA90343A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A0BA37E83070050AC9A96EF05F04A6 /* Pods-sample-appTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sample-appTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sample-appTests/Pods-sample-appTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BA0B69539D81FAFDBADB49BB36D5695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0123EF110CCF3A89D571C4481809F951 /* Paystack.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Paystack/Paystack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Paystack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Paystack/Paystack.modulemap";
+				PRODUCT_MODULE_NAME = Paystack;
+				PRODUCT_NAME = Paystack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8807103E41AD3317E0565DCED37679F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8D0CF105ED3DB6E38C17382959C92499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316527BE71B99FB791AE712A52FCDBDF /* Pods-sample-app.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sample-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sample-app/Pods-sample-app.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		937CDE5C829A638B4A8504BC2EC59C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A10FC90D421DDA6F0F88667D714797 /* Pods-sample-app.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sample-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sample-app/Pods-sample-app.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6962F30279D83FFF7108CB8B2DCE8B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0123EF110CCF3A89D571C4481809F951 /* Paystack.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Paystack/Paystack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Paystack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Paystack/Paystack.modulemap";
+				PRODUCT_MODULE_NAME = Paystack;
+				PRODUCT_NAME = Paystack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDA2A2D6E72043262FFDEF676599F434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FA040120E477F8E31C6BF4859F138C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846E3EFA7DD00F181D11FCDB5D579692 /* Pods-sample-appUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sample-appUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sample-appUITests/Pods-sample-appUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA2A2D6E72043262FFDEF676599F434 /* Debug */,
+				8807103E41AD3317E0565DCED37679F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F1AA3D495FD308A2C2989A2870B5C6B /* Build configuration list for PBXNativeTarget "Paystack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6962F30279D83FFF7108CB8B2DCE8B5 /* Debug */,
+				3BA0B69539D81FAFDBADB49BB36D5695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBFB8252530A6A643CBB7943AD7B7808 /* Build configuration list for PBXNativeTarget "Pods-sample-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045F359E074AB68342AFCA90B73D2D13 /* Debug */,
+				FA040120E477F8E31C6BF4859F138C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4297F251474966ADE0655584CAFB8E4 /* Build configuration list for PBXNativeTarget "Pods-sample-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2073B33E79A34598D3D87DA4FA90343A /* Debug */,
+				093B85E12FB61CCDB173CFA88282CA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E961F9544BA75BDBEFF29F5F21601C83 /* Build configuration list for PBXNativeTarget "Pods-sample-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				937CDE5C829A638B4A8504BC2EC59C7D /* Debug */,
+				8D0CF105ED3DB6E38C17382959C92499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
