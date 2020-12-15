@@ -190,10 +190,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-aj-TAC">
-                                <rect key="frame" x="157" y="250" width="100" height="40"/>
+                                <rect key="frame" x="40" y="150" width="334" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47058823529999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="0fD-jx-8nL"/>
                                     <constraint firstAttribute="height" constant="40" id="dOq-x5-718"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
@@ -208,8 +207,10 @@
                         <viewLayoutGuide key="safeArea" id="VYJ-Kh-1aQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q4o-aj-TAC" firstAttribute="top" secondItem="VYJ-Kh-1aQ" secondAttribute="top" constant="250" id="bOc-Jl-l8w"/>
+                            <constraint firstItem="q4o-aj-TAC" firstAttribute="top" secondItem="VYJ-Kh-1aQ" secondAttribute="top" constant="150" id="bOc-Jl-l8w"/>
+                            <constraint firstItem="q4o-aj-TAC" firstAttribute="leading" secondItem="VYJ-Kh-1aQ" secondAttribute="leading" constant="40" id="g0B-lG-OrV"/>
                             <constraint firstItem="q4o-aj-TAC" firstAttribute="centerX" secondItem="zbX-1n-tZ9" secondAttribute="centerX" id="jDa-DD-dih"/>
+                            <constraint firstItem="VYJ-Kh-1aQ" firstAttribute="trailing" secondItem="q4o-aj-TAC" secondAttribute="trailing" constant="40" id="kZS-YE-hqS"/>
                         </constraints>
                     </view>
                     <connections>

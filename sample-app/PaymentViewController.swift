@@ -12,7 +12,10 @@ import Paystack
 class PaymentViewController: UIViewController , PSTCKPaymentCardTextFieldDelegate {
   
   let paymentTextField = PSTCKPaymentCardTextField()
+  var product: Product!
+
   @IBOutlet weak var payButton: UIButton!
+  
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,12 +23,14 @@ class PaymentViewController: UIViewController , PSTCKPaymentCardTextFieldDelegat
     paymentTextField.frame = CGRect.init(x: 15, y: 15, width: self.view.frame.width - 30, height: 44)
     paymentTextField.delegate = self
     view.addSubview(paymentTextField)
+    payButton.setTitle("Pay " + product.price, for: .normal)
 
 
   }
   
-  func paymentCardTextFieldDidChange(textField: PSTCKPaymentCardTextField) {
+  func paymentCardTextFieldDidChange(_ textField: PSTCKPaymentCardTextField) {
       
+    
     self.payButton.isEnabled = textField.isValid
     
   }
@@ -37,19 +42,14 @@ class PaymentViewController: UIViewController , PSTCKPaymentCardTextFieldDelegat
     let transactionParams = PSTCKTransactionParams.init();
 
     // building new Paystack Transaction
-    transactionParams.amount = 250000;
-    let custom_filters: NSMutableDictionary = [
-        "recurring": true
-      ];
+    transactionParams.amount = UInt(product.price_ng * 100)
+     
     let items: NSMutableArray = [
-        "Bag","Glasses"
+        "Item 1","Item 2"
       ];
     do {
-        //try transactionParams.setCustomFieldValue("iOS SDK", displayedAs: "Paid Via");
-        //try transactionParams.setCustomFieldValue("Paystack hats", displayedAs: "To Buy");
-        //try transactionParams.setMetadataValue("iOS SDK", forKey: "paid_via");
-        //try transactionParams.setMetadataValueDict(custom_filters, forKey: "custom_filters");
-        try transactionParams.setMetadataValueArray(items, forKey: "items");
+      
+        try transactionParams.setMetadataValueArray(items, forKey: "items")
     } catch {
         print(error);
     }
@@ -60,9 +60,9 @@ class PaymentViewController: UIViewController , PSTCKPaymentCardTextFieldDelegat
     PSTCKAPIClient.shared().chargeCard(cardParams, forTransaction: transactionParams, on: self, didEndWithError: { (error, reference) -> Void in
         self.handleError(error: error)
       }, didRequestValidation: { (reference) -> Void in
-                // an OTP was requested, transaction has not yet succeeded
+              // an OTP was requested, transaction has not yet succeeded
             }, didTransactionSuccess: { (reference) -> Void in
-                // transaction may have succeeded, please verify on backend
+              // transaction may have succeeded, please verify on backend
       })
   }
   

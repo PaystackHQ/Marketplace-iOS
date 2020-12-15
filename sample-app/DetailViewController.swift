@@ -24,23 +24,20 @@ class DetailViewController: UIViewController {
     super.viewDidLoad()
     self.imageView?.image = UIImage.init(named: product.imageName)
     self.details?.text = product.description
-    self.price?.text = "NGN " + product.price
+    self.price?.text = product.price
     
       
   }
   
-  
-
-
-
-  /*
+ 
   // MARK: - Navigation
-
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
+   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      // Get the new view controller using segue.destination.
-      // Pass the selected object to the new view controller.
+    if segue.identifier == "payVC" {
+      let vc = segue.destination as! PaymentViewController
+      vc.product = self.product
+    }
   }
-  */
-
+  
+   
 }
