@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    Paystack.setDefaultPublicKey("pk_test_cc48c77027728ee742f6d9e2393b3c645f8adcb1")
+    Paystack.setDefaultPublicKey("your_public_key")
 
     
     
