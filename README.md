@@ -5,6 +5,6 @@ accompanying guide that explains how you should go about your integration.
  
 # Project Setup
 - Clone project and open `sample-app.xcworkspace` with XCode
-- Open the `AppDelegate` file and add the following param:
-  - Paystack.setDefaultPublicKey("your_paystack_public_key")
+- Open the `info.plist` file and add your public key value for the key Public_Key
+
 - Run the project on your iPhone or Simulator
