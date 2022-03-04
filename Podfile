@@ -11,7 +11,10 @@ target 'sample-app' do
   
   # Pods for sample-app
   
-  pod 'Paystack' 
+  #pod 'Paystack'
+  
+  pod 'Paystack', '~> 3.0.16'
+
   
   target 'sample-appTests' do
     inherit! :search_paths

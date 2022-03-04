@@ -17,11 +17,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    Paystack.setDefaultPublicKey("your_public_key")
+    
+     var apiKey: String {
+      get {
+        // 1
+        guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist") else {
+          fatalError("Couldn't find file 'Info.plist'.")
+        }
+        // 2
+        let plist = NSDictionary(contentsOfFile: filePath)
+        guard let value = plist?.object(forKey: "Public_Key") as? String else {
+          fatalError("Couldn't find key 'Public_Key' in 'Info.plist'.")
+        }
+        return value
+      }
+    }
+    
+    
+    Paystack.setDefaultPublicKey(apiKey)
 
     
     
-      return true
+    return true
   }
 
   // MARK: UISceneSession Lifecycle

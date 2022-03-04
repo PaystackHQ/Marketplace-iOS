@@ -53,16 +53,17 @@ class PaymentViewController: UIViewController , PSTCKPaymentCardTextFieldDelegat
     } catch {
         print(error);
     }
-    transactionParams.email = "jkumako@yahoo.fr";
-
-     
+    transactionParams.email = "test_paystack@yahoo.fr";
 
     PSTCKAPIClient.shared().chargeCard(cardParams, forTransaction: transactionParams, on: self, didEndWithError: { (error, reference) -> Void in
         self.handleError(error: error)
       }, didRequestValidation: { (reference) -> Void in
-              // an OTP was requested, transaction has not yet succeeded
-            }, didTransactionSuccess: { (reference) -> Void in
-              // transaction may have succeeded, please verify on backend
+          // an OTP was requested, transaction has not yet succeeded
+        },
+       didTransactionSuccess: { (reference) -> Void in
+        // transaction may have succeeded, please verify on backend
+        self.payButton.isEnabled = false // we disable the pay button to avoid multiple transaction
+        print("Transaction have succeeded")
       })
   }
   
